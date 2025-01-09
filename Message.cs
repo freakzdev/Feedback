@@ -204,7 +204,7 @@ namespace Feedback
         _description.IsVisible = true;
         await _description.ScaleTo(1, 250);
       }
-      HapticFeedback.Perform(HapticFeedbackType.Click);
+      HapticFeedback.Perform(HapticFeedbackType.LongPress);
     }
 
     private async Task Hide()
@@ -216,7 +216,7 @@ namespace Feedback
       await _icon.ScaleTo(1.5, 250);
       await _icon.ScaleTo(0.1, 50);
       _icon.IsVisible = false;
-      HapticFeedback.Perform(HapticFeedbackType.LongPress);
+      HapticFeedback.Perform(HapticFeedbackType.Click);
     }
 
   }
