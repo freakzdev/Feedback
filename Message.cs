@@ -8,6 +8,7 @@ namespace Feedback
     {
       HorizontalOptions = LayoutOptions.Center,
       VerticalOptions = LayoutOptions.Center,
+      Margin = new Thickness(0, 0, 0, 5),
       IsVisible = false
     };
     private readonly Label _tag = new()
@@ -26,7 +27,7 @@ namespace Feedback
       VerticalTextAlignment = TextAlignment.Center,
       HorizontalTextAlignment = TextAlignment.Center,
       IsVisible = false,
-      TextColor = Color.FromArgb("#FF999999")
+      TextColor = Color.FromArgb("#FF808080")
     };
 
     // Size Bindable Property
