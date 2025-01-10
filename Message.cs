@@ -11,7 +11,7 @@ namespace Feedback
       Margin = new Thickness(0, 0, 0, 5),
       IsVisible = false
     };
-    private readonly Label _tag = new()
+    private readonly Label _title = new()
     {
       HorizontalOptions = LayoutOptions.Center,
       VerticalOptions = LayoutOptions.Center,
@@ -73,25 +73,25 @@ namespace Feedback
       control.SetIcon();
     }
 
-    // Tag Bindable Property
-    public static readonly BindableProperty TagProperty = BindableProperty.Create(
-        nameof(Tag),
+    // Title Bindable Property
+    public static readonly BindableProperty TitleProperty = BindableProperty.Create(
+        nameof(Title),
         typeof(string),
         typeof(Message),
         "",
-        propertyChanged: OnTagChanged
+        propertyChanged: OnTitleChanged
     );
 
-    public string Tag
+    public string Title
     {
-      get => (string)GetValue(TagProperty);
-      set => SetValue(TagProperty, value);
+      get => (string)GetValue(TitleProperty);
+      set => SetValue(TitleProperty, value);
     }
 
-    private static void OnTagChanged(BindableObject bindable, object oldValue, object newValue)
+    private static void OnTitleChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var control = (Message)bindable;
-      control.SetTag();
+      control.SetTitle();
     }
 
     // Description Bindable Property
@@ -151,11 +151,11 @@ namespace Feedback
     private void Build()
     {
       Children.Add(_icon);
-      Children.Add(_tag);
+      Children.Add(_title);
       Children.Add(_description);
       SetSize();
       SetIcon();
-      SetTag();
+      SetTitle();
       SetDescription();
     }
 
@@ -164,16 +164,16 @@ namespace Feedback
     {
       _icon.WidthRequest = Size;
       _icon.HeightRequest = Size;
-      _tag.FontSize = Size * 0.2;
+      _title.FontSize = Size * 0.2;
       _description.FontSize = Size * 0.14;
     }
     private void SetIcon()
     {
       _icon.Source = $"feedback_{Type}.png";
     }
-    private void SetTag()
+    private void SetTitle()
     {
-      _tag.Text = Tag;
+      _title.Text = Title;
     }
     private void SetDescription()
     {
@@ -192,11 +192,11 @@ namespace Feedback
       await _icon.ScaleTo(0.6, 100);
       await _icon.ScaleTo(1, 80);
 
-      if (!string.IsNullOrEmpty(Tag))
+      if (!string.IsNullOrEmpty(Title))
       {
-        await _tag.ScaleTo(0.1, 0);
-        _tag.IsVisible = true;
-        await _tag.ScaleTo(1, 80);
+        await _title.ScaleTo(0.1, 0);
+        _title.IsVisible = true;
+        await _title.ScaleTo(1, 80);
       }
 
       if (!string.IsNullOrEmpty(Description))
@@ -212,8 +212,8 @@ namespace Feedback
     {
       await _description.ScaleTo(0.1, 50);
       _description.IsVisible = false;
-      await _tag.ScaleTo(0.1, 100);
-      _tag.IsVisible = false;
+      await _title.ScaleTo(0.1, 100);
+      _title.IsVisible = false;
       await _icon.ScaleTo(1.5, 250);
       await _icon.ScaleTo(0.1, 50);
       _icon.IsVisible = false;
