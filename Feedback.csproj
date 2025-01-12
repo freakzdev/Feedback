@@ -12,7 +12,7 @@
 
 		<SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
 
-		<VersionPrefix>1.0.1</VersionPrefix>
+		<VersionPrefix>1.0.2</VersionPrefix>
 		<VersionSuffix></VersionSuffix>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion> <!-- Tested: iOS 18 -->
@@ -52,6 +52,10 @@
 			<PackagePath>\</PackagePath>
 		</None>
 		<None Include="NUGET-README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="assets/logo.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>

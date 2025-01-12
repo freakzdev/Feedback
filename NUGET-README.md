@@ -2,8 +2,6 @@
 
 Feedback is a .NET MAUI library that allows you to display response messages for executed processes or tasks. It supports different types of feedback such as error, info, success, and warning. You can customize the title and description, and it uses animations for when the messages appear and disappear.
 
-![Feedback](files/Feedback.gif)
-
 ## Features
 
 - Display feedback messages for processes or tasks
@@ -13,16 +11,11 @@ Feedback is a .NET MAUI library that allows you to display response messages for
 
 ## Version
 
-Current version: 1.0.1
+Current version: 1.0.2
 
 ## Icons
 
 To use the feedback icons, copy the SVG icons from the `icons` folder to the `Resources\Images` folder of your main project. Feel free to modify the icons to suit your needs.
-
-![Info](files/info.png)
-![Error](files/error.png)
-![Success](files/success.png)
-![Warning](files/warning.png)
 
 ## Properties
 
@@ -39,7 +32,7 @@ To use the feedback icons, copy the SVG icons from the `icons` folder to the `Re
 First, add the namespace to your XAML file:
 
 ```xml
-xmlns:feedback="clr-namespace:Feedback;assembly=Feedback"
+xmlns:feedback="clr-namespace:FreakzDEV.Feedback;assembly=FreakzDEV.Feedback"
 ```
 
 Then, you can use the `Feedback` control in your XAML:
@@ -89,9 +82,6 @@ Here is an example of how to use the Feedback library in your .NET MAUI applicat
   Description="Your battery level is below 20%."
   isVidible="True" />
 ```
-## Sample
-
-![Sample](files/Sample.gif)
 
 ## License
 

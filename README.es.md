@@ -20,11 +20,11 @@ Feedback es una biblioteca de .NET MAUI que te permite mostrar mensajes de respu
 Para instalar Feedback, ejecuta el siguiente comando en la Consola del Administrador de Paquetes NuGet:
 
 ```sh
-dotnet add package FreakzDEV.Feedback --version 1.0.1
+dotnet add package FreakzDEV.Feedback --version 1.0.2
 ```
 ## Versión
 
-Versión actual: 1.0.1
+Versión actual: 1.0.2
 
 ## Iconos
 
@@ -53,7 +53,7 @@ Para usar los iconos de feedback, copia los iconos SVG de la carpeta `icons` a l
 Primero, agrega el espacio de nombres a tu archivo XAML:
 
 ```xml
-xmlns:feedback="clr-namespace:Feedback;assembly=Feedback"
+xmlns:feedback="clr-namespace:FreakzDEV.Feedback;assembly=FreakzDEV.Feedback"
 ```
 
 Luego, puedes usar el control `Feedback` en tu XAML:
