@@ -1,5 +1,3 @@
-🇺🇸 EN | [🇪🇸 ES](README.es.md)
-
 # Feedback
 
 Feedback is a .NET MAUI library that allows you to display response messages for executed processes or tasks. It supports different types of feedback such as error, info, success, and warning. You can customize the title and description, and it uses animations for when the messages appear and disappear.
@@ -15,13 +13,6 @@ Feedback is a .NET MAUI library that allows you to display response messages for
 - Customizable title and description
 - Animations for appearing and disappearing messages
 
-## Installation
-
-To install Feedback, run the following command in the NuGet Package Manager Console:
-
-```sh
-dotnet add package FreakzDEV.Feedback --version 1.0.0
-```
 ## Version
 
 Current version: 1.0.0

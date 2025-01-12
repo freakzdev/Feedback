@@ -22,12 +22,13 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 
+		<AssemblyName>FreakzDEV.Feedback</AssemblyName>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Title>.NET Maui Feedback</Title>
 		<Description>Feedback is a .NET MAUI library that allows you to display response messages for executed processes or tasks.</Description>
 		<PackageProjectUrl>https://github.com/freakzdev/Feedback</PackageProjectUrl>
-		<PackageIcon>Logo.png</PackageIcon>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>NUGET-README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/freakzdev/Feedback</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>dotnet; maui; feedback; message</PackageTags>
@@ -50,7 +51,7 @@
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-		<None Include="README.md">
+		<None Include="NUGET-README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
