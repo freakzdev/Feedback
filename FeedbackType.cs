@@ -1,4 +1,4 @@
-namespace Feedback
+namespace FreakzDEV.Feedback
 {
   // Enum representing the type of Feedback Message
   public enum FeedbackType

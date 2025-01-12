@@ -1,4 +1,4 @@
-namespace Feedback
+namespace FreakzDEV.Feedback
 {
   public class Message : StackLayout
   {
