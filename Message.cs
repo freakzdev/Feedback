@@ -45,7 +45,6 @@ namespace Feedback
       set => SetValue(SizeProperty, value);
     }
 
-
     private static void OnSizeChanged(BindableObject bindable, object oldValue, object newValue)
     {
       var control = (Message)bindable;

@@ -2,6 +2,10 @@
 
 Feedback is a .NET MAUI library that allows you to display response messages for executed processes or tasks. It supports different types of feedback such as error, info, success, and warning. You can customize the title and description, and it uses animations for when the messages appear and disappear.
 
+<div style="margin: 20px 0;">
+    <img src="files/Feedback.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+</div>
+
 ## Features
 
 - Display feedback messages for processes or tasks
@@ -16,10 +20,31 @@ To install Feedback, run the following command in the NuGet Package Manager Cons
 ```sh
 Install-Package Feedback
 ```
+## Version
+
+Current version: 1.0.0
 
 ## Icons
 
 To use the feedback icons, copy the SVG icons from the `icons` folder to the `Resources\Images` folder of your main project. Feel free to modify the icons to suit your needs.
+
+<div style="margin: 20px 0;">
+    <img src="files/info.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="files/error.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="files/success.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="files/warning.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+</div>
+
+## Properties
+
+<table style="border: 1px solid #4d4d4d50;">
+    <tr style="font-weight: 900;background-color:#4d4d4d20;"><td>Property</td><td>Description</td><td>Default Value</td></tr>
+    <tr><td style="font-weight: 600;">Size</td><td>Defines the size of the control. Based on this value, the size of the icon, title, and description is determined.</td><td>100</td></tr>
+    <tr><td style="font-weight: 600;">Type</td><td>Determines the type of icon: error, info, success, warning.</td><td>info</td></tr>
+    <tr><td style="font-weight: 600;">Title</td><td>The title of the message.</td><td>Empty string</td></tr>
+    <tr><td style="font-weight: 600;">Description</td><td>The description of the message.</td><td>Empty string</td></tr>
+    <tr><td style="font-weight: 600;">IsVisible</td><td>Determines the visibility of the control.<td>false</td></tr>
+</table>
 
 ## Usage
 
@@ -35,7 +60,8 @@ Then, you can use the `Feedback` control in your XAML:
 <feedback:Message
   Type="success"
   Title="Operation Completed"
-  Description="The operation was completed successfully." />
+  Description="The operation was completed successfully."
+  isVidible="True" />
 ```
 
 You can also set the properties programmatically:
@@ -45,7 +71,8 @@ var feedback = new Feedback.Message
 {
   Type = FeedbackType.Success,
   Title = "Operation Completed",
-  Description = "The operation was completed successfully."
+  Description = "The operation was completed successfully.",
+  isVisible = true
 };
 ```
 
@@ -71,8 +98,14 @@ Here is an example of how to use the Feedback library in your .NET MAUI applicat
 <feedback:FeedbackControl
   Type="warning"
   Title="Low Battery"
-  Description="Your battery level is below 20%." />
+  Description="Your battery level is below 20%."
+  isVidible="True" />
 ```
+## Sample
+
+<div style="margin: 20px 0;">
+    <img src="files/Sample.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+</div>
 
 ## License
 
