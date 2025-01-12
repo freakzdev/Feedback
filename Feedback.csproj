@@ -26,7 +26,7 @@
 		<Title>.NET Maui Feedback</Title>
 		<Description>Feedback is a .NET MAUI library that allows you to display response messages for executed processes or tasks.</Description>
 		<PackageProjectUrl>https://github.com/freakzdev/Feedback</PackageProjectUrl>
-		<!-- <PackageIcon>Logo.png</PackageIcon> -->
+		<PackageIcon>Logo.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/freakzdev/Feedback</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
