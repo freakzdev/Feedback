@@ -5,7 +5,7 @@
 Feedback es una biblioteca de .NET MAUI que te permite mostrar mensajes de respuesta para procesos o tareas ejecutadas. Soporta diferentes tipos de feedback como error, información, éxito y advertencia. Puedes personalizar el título y la descripción, y utiliza animaciones para cuando los mensajes aparecen y desaparecen.
 
 <div style="margin: 20px 0;">
-  <img src="files/Feedback.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+  <img src="assets/Feedback.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
 </div>
 
 ## Características
@@ -20,21 +20,21 @@ Feedback es una biblioteca de .NET MAUI que te permite mostrar mensajes de respu
 Para instalar Feedback, ejecuta el siguiente comando en la Consola del Administrador de Paquetes NuGet:
 
 ```sh
-dotnet add package FreakzDEV.Feedback --version 1.0.0
+dotnet add package FreakzDEV.Feedback --version 1.0.1
 ```
 ## Versión
 
-Versión actual: 1.0.0
+Versión actual: 1.0.1
 
 ## Iconos
 
 Para usar los iconos de feedback, copia los iconos SVG de la carpeta `icons` a la carpeta `Resources\Images` de tu proyecto principal. Siéntete libre de modificar los iconos según tus necesidades.
 
 <div style="margin: 20px 0;">
-  <img src="files/info.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
-  <img src="files/error.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
-  <img src="files/success.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
-  <img src="files/warning.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+  <img src="assets/info.png" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+  <img src="assets/error.png" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+  <img src="assets/success.png" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+  <img src="assets/warning.png" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
 </div>
 
 ## Propiedades
@@ -106,7 +106,7 @@ Aquí tienes un ejemplo de cómo usar la biblioteca Feedback en tu aplicación .
 ## Ejemplo
 
 <div style="margin: 20px 0;">
-  <img src="files/Sample.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+  <img src="assets/Sample.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
 </div>
 
 ## Licencia

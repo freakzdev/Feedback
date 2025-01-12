@@ -5,7 +5,7 @@
 Feedback is a .NET MAUI library that allows you to display response messages for executed processes or tasks. It supports different types of feedback such as error, info, success, and warning. You can customize the title and description, and it uses animations for when the messages appear and disappear.
 
 <div style="margin: 20px 0;">
-    <img src="files/Feedback.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="assets/Feedback.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
 </div>
 
 ## Features
@@ -20,21 +20,21 @@ Feedback is a .NET MAUI library that allows you to display response messages for
 To install Feedback, run the following command in the NuGet Package Manager Console:
 
 ```sh
-dotnet add package FreakzDEV.Feedback --version 1.0.0
+dotnet add package FreakzDEV.Feedback --version 1.0.1
 ```
 ## Version
 
-Current version: 1.0.0
+Current version: 1.0.1
 
 ## Icons
 
 To use the feedback icons, copy the SVG icons from the `icons` folder to the `Resources\Images` folder of your main project. Feel free to modify the icons to suit your needs.
 
 <div style="margin: 20px 0;">
-    <img src="files/info.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
-    <img src="files/error.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
-    <img src="files/success.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
-    <img src="files/warning.PNG" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="assets/info.png" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="assets/error.png" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="assets/success.png" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="assets/warning.png" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
 </div>
 
 ## Properties
@@ -106,7 +106,7 @@ Here is an example of how to use the Feedback library in your .NET MAUI applicat
 ## Sample
 
 <div style="margin: 20px 0;">
-    <img src="files/Sample.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
+    <img src="assets/Sample.gif" width="40%" height="auto" style="border: 1px solid #4d4d4d50;">
 </div>
 
 ## License
