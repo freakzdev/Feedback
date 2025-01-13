@@ -22,6 +22,16 @@ To install Feedback, run the following command in the NuGet Package Manager Cons
 ```sh
 dotnet add package FreakzDEV.Feedback --version 1.0.2
 ```
+
+<div style="margin: 20px 0;">
+  <a href="https://www.nuget.org/packages/FreakzDEV.Feedback" style="text-decoration: none;color: #004880;">
+    <div style="display: inline-flex;gap:10px;align-items: center;">
+      <img src="assets/nuget.svg" width="24px" height="auto" >
+      <span style="font-weight: 900; font-size: 20px;">Nuget Package</span>
+    </div>
+  </a>
+</div>
+
 ## Version
 
 Current version: 1.0.2
